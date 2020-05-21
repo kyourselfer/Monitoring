@@ -1,5 +1,5 @@
 ### Task
-## Connect Oracle Tablespace to the Zabbix monitoring system.
+## Connect Oracle Tablespace to the Zabbix monitoring system. The result should be displayed as a percentage.
 `/etc/zabbix/zabbix_agentd.d/oracle.conf`
 ```
 UserParameter=oracle.tablespace_space[*],sudo -u oracle /etc/zabbix/scripts/oracle_tablespace_space.sh $1
